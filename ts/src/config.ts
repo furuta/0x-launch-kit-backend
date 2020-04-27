@@ -24,6 +24,8 @@ export const WHITELISTED_TOKENS: string[] | '*' = _.isEmpty(process.env.WHITELIS
     ? [
           '0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa', // ZRX on Kovan
           '0xd0a1e359811322d97991e03f863a0c30c2cf029c', // WETH on Kovan
+          '0xE5efF4E83A37f6491d44FE1696eF6357603B35eA', // Tier0 on Ropsten
+          '0x0cDb4987F9c6869B46D48c69aC08DE915d463A20', // Tier1a on Ropsten
       ]
     : assertEnvVarType('WHITELIST_ALL_TOKENS', process.env.WHITELIST_ALL_TOKENS, EnvVarType.WhitelistAllTokens);
 
